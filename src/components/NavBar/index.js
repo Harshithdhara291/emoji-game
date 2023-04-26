@@ -9,10 +9,10 @@ const NavBar = props => {
         <div className="logo-and-title-container">
           <img
             className="emoji-logo"
-            src="https://assets.ccbp.in/frontend/react-js/game-logo-img.png"
+            src="https://invisioncommunity.co.uk/wp-content/uploads/2015/01/emoji_stars_logo.png"
             alt="emoji logo"
           />
-          <h1 className="title">Emoji Game</h1>
+          <h1 className="title">Emoji Stars</h1>
         </div>
         {isGameInProgress && (
           <div className="scores-container">

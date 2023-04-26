@@ -18,12 +18,12 @@
 }
 
 .emoji-logo {
-  width: 24px;
+  width: 60px;
 }
 
 @media screen and (min-width: 768px) {
   .emoji-logo {
-    width: 48px;
+    width: 100px;
   }
 }
 

@@ -1,5 +1,4 @@
 .win-or-lose-card {
-  align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9,6 +8,7 @@
   border-radius: 24px;
   margin-top: 20px;
   padding: 16px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px 0px 0px inset;
 }
 
 @media screen and (min-width: 768px) {
@@ -89,22 +89,46 @@
   }
 }
 
-.play-again-button {
-  color: #3d3d3d;
-  background-color: #ffce27;
-  font-family: 'Roboto';
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  border-radius: 20px;
-  margin: 16px;
-  padding: 16px;
-  padding-right: 24px;
-  padding-left: 24px;
+.btn {
+  padding: 1.1em 2em;
+  background: none;
+  border: 2px solid #fff;
+  font-size: 15px;
+  color: #131313;
   cursor: pointer;
-  outline: none;
-}
-
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 12px;
+  background-color: hsl(61, 98%, 56%);
+  font-weight: bolder;
+  margin: 16px;
+ }
+ 
+ .btn:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 120%;
+  background-color: #ff6700;
+  top: 50%;
+  transform: skewX(30deg) translate(-150%, -50%);
+  transition: all 0.5s;
+ }
+ 
+ .btn:hover {
+  background-color: #4cc9f0;
+  color: #fff;
+ }
+ 
+ .btn:hover::before {
+  transform: skewX(30deg) translate(150%, -50%);
+  transition-delay: 0.1s;
+ }
+ 
+ .btn:active {
+  transform: scale(0.9);
+ }
 .image-section {
   display: flex;
   justify-content: center;

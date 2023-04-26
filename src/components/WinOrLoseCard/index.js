@@ -1,3 +1,4 @@
+import Fade from 'react-reveal/Fade';
 import './index.css'
 
 const LOSE_IMAGE = 'https://assets.ccbp.in/frontend/react-js/lose-game-img.png'
@@ -11,18 +12,20 @@ const WinOrLoseCard = props => {
 
   return (
     <div className="win-or-lose-card">
+      <Fade left>
       <div className="details-section">
         <h1 className="game-status">{gameStatus}</h1>
         <p className="current-score-label">{scoreLabel}</p>
         <p className="current-score-value">{score}/12</p>
         <button
           type="button"
-          className="play-again-button"
+          className="btn"
           onClick={onClickPlayAgain}
         >
           Play Again
         </button>
       </div>
+      </Fade>
       <div className="image-section">
         <img className="win-or-lose-image" src={imageUrl} alt="win or lose" />
       </div>

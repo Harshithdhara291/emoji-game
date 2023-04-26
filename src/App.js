@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import EmojiGame from './components/EmojiGame'
 
 import './App.css'
@@ -74,6 +75,15 @@ const emojisList = [
   },
 ]
 
-const App = () => <EmojiGame emojisList={emojisList} />
+const App = () => {
+  useEffect(() => {
+    window.process = {
+      ...window.process,
+    };
+  }, []);
+  return(
+    <EmojiGame emojisList={emojisList} />
+  )
+}
 
 export default App
