@@ -141,14 +141,27 @@
   }
 }
 
-.win-or-lose-image {
-  width: 150px;
+.lose-image {
+  width: 200px;
   height: 200px;
 }
 
-@media screen and (min-width: 992px) {
-  .win-or-lose-image {
-    width: 350px;
-    height: 450px;
+@media screen and (min-width: 768px) {
+  .lose-image {
+    width: 400px;
+    height: 420px;
   }
 }
+
+.won-image {
+  width: 190px;
+  height: 120px;
+}
+
+@media screen and (min-width: 768px) {
+  .won-image {
+    width: 430px;
+    height: 300px;
+  }
+}
+
