@@ -4,7 +4,7 @@ const NavBar = props => {
   const {currentScore, isGameInProgress, topScore} = props
 
   return (
-    <nav className="nav-bar-container">
+    <nav className="nav-bar-container fixed">
       <div className="title-with-score-container">
         <div className="logo-and-title-container">
           <img

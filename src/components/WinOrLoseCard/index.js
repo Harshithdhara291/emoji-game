@@ -1,4 +1,3 @@
-import Fade from 'react-reveal/Fade';
 import './index.css'
 
 const LOSE_IMAGE = 'https://res.cloudinary.com/di4qjlwyr/image/upload/v1682491937/483-4831080_very-sad-to-hart-emojis-icon-for-face-removebg-preview_e7bub2.png'
@@ -13,7 +12,6 @@ const WinOrLoseCard = props => {
 
   return (
     <div className="win-or-lose-card">
-      <Fade left>
       <div className="details-section">
         <h1 className="game-status">{gameStatus}</h1>
         <p className="current-score-label">{scoreLabel}</p>
@@ -26,12 +24,9 @@ const WinOrLoseCard = props => {
           Play Again
         </button>
       </div>
-      </Fade>
-      <Fade right>
       <div className="image-section">
         <img className={approClassName} src={imageUrl} alt="win or lose" />
       </div>
-      </Fade>
     </div>
   )
 }
