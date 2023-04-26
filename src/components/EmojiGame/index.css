@@ -3,8 +3,8 @@
   flex-direction: column;
   background-image: linear-gradient(
     to bottom right,
-    #9796f0 0.5%,
-    #fbc7d4 150%
+    #ade8f3 0.5%,
+    #dbb3bf 150%
   );
   min-height: 100vh;
 }
@@ -13,15 +13,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1;
+}
+
+
+@media screen and (max-width: 767px) {
+  .emojis-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0%;
+    padding: 20px;
+  }
 }
 
 .emojis-list-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
   margin: auto;
-  padding: 0px;
+  padding-top: 12px;
   max-width: 1000px;
 }
